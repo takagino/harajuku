@@ -43,7 +43,7 @@ tl.set(
   {
     opacity: 1,
   },
-  '-=1.4'
+  '-=1.2'
 );
 tl.set(
   '#vertical',
@@ -57,7 +57,7 @@ tl.set(
   {
     opacity: 1,
   },
-  '-=0.9'
+  '-=0.8'
 );
 tl.set(
   '#plus',
