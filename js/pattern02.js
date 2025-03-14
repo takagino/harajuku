@@ -3,7 +3,7 @@ const tl = gsap.timeline();
 
 //スピード設定
 const messageSpeed = 5;
-const typeSpeed = 0.6;
+const typeSpeed = 0.5;
 const blinkSpeed = 0.3;
 
 // アニメーション
@@ -43,7 +43,7 @@ tl.set(
   {
     opacity: 1,
   },
-  '-=1.6'
+  '-=1.4'
 );
 tl.set(
   '#vertical',
@@ -57,14 +57,14 @@ tl.set(
   {
     opacity: 1,
   },
-  '-=1.0'
+  '-=0.9'
 );
 tl.set(
   '#plus',
   {
     opacity: 1,
   },
-  '-=0.4'
+  '-=0.3'
 );
 tl.set('#colon', {
   opacity: 1,
@@ -72,7 +72,7 @@ tl.set('#colon', {
 });
 tl.set('#registered', {
   opacity: 1,
-  delay: 0.3,
+  delay: 0.2,
 });
 tl.set('#st3', {
   fill: '#fff',
