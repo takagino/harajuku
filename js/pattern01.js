@@ -2,6 +2,8 @@
 const tl = gsap.timeline();
 
 //スピード設定
+const messageSpeed = 6;
+const typeSpeed = 0.8;
 const blinkSpeed = 0.3;
 
 // アニメーション
@@ -15,22 +17,34 @@ tl.to('#message', {
 tl.to('#message', {
   opacity: 0,
   filter: 'blur(10px)',
-  duration: 0.5,
-  delay: 8,
-  ease: 'power2.out',
+  duration: 0.6,
+  delay: messageSpeed,
+  ease: 'power2.in',
 });
 tl.set('#st1', {
   opacity: 1,
-  delay: 1,
+  delay: 1.5,
 });
 tl.set('#st2', {
   opacity: 1,
-  delay: 0.5,
+  delay: typeSpeed,
 });
-tl.set('#x', {
+tl.set('#st3', {
+  fill: '#000',
   opacity: 1,
-  delay: 0.5,
+  delay: typeSpeed,
 });
+tl.set('#st4', {
+  opacity: 1,
+  delay: typeSpeed,
+});
+tl.set(
+  '#x',
+  {
+    opacity: 1,
+  },
+  '-=1.8'
+);
 tl.set(
   '#vertical',
   {
@@ -38,34 +52,31 @@ tl.set(
   },
   '<'
 );
-tl.set('#equal', {
-  opacity: 1,
-  delay: 0.2,
-});
-tl.set('#st3', {
-  fill: '#000',
-  opacity: 1,
-  delay: 0.8,
-});
-tl.set('#st4', {
-  opacity: 1,
-  delay: 0.5,
-});
-tl.set('#plus', {
-  opacity: 1,
-  delay: 0.5,
-});
+tl.set(
+  '#equal',
+  {
+    opacity: 1,
+  },
+  '-=1.2'
+);
+tl.set(
+  '#plus',
+  {
+    opacity: 1,
+  },
+  '-=0.5'
+);
 tl.set('#colon', {
   opacity: 1,
   delay: 0.2,
 });
 tl.set('#registered', {
   opacity: 1,
-  delay: 0.2,
+  delay: 0.3,
 });
 tl.set('#st3', {
   fill: '#fff',
-  delay: 0.5,
+  delay: 0.8,
 });
 tl.set(
   '#rect',
