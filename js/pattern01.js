@@ -1,12 +1,17 @@
 // タイムライン設定
 const tl = gsap.timeline();
+// tl.pause();
 
 //スピード設定
-const messageSpeed = 6;
-const typeSpeed = 0.8;
+const messageSpeed = 5;
+const typeSpeed = 0.5;
 const blinkSpeed = 0.3;
 
 // アニメーション
+tl.set('#message', {
+  opacity: 0,
+  filter: 'blur(10px)',
+});
 tl.to('#message', {
   opacity: 1,
   filter: 'blur(0px)',
@@ -17,13 +22,13 @@ tl.to('#message', {
 tl.to('#message', {
   opacity: 0,
   filter: 'blur(10px)',
-  duration: 0.6,
+  duration: 0.5,
   delay: messageSpeed,
   ease: 'power2.in',
 });
 tl.set('#st1', {
   opacity: 1,
-  delay: 1.5,
+  delay: 1,
 });
 tl.set('#st2', {
   opacity: 1,
@@ -43,7 +48,7 @@ tl.set(
   {
     opacity: 1,
   },
-  '-=1.8'
+  '-=1.2'
 );
 tl.set(
   '#vertical',
@@ -57,14 +62,14 @@ tl.set(
   {
     opacity: 1,
   },
-  '-=1.2'
+  '-=0.8'
 );
 tl.set(
   '#plus',
   {
     opacity: 1,
   },
-  '-=0.5'
+  '-=0.3'
 );
 tl.set('#colon', {
   opacity: 1,
@@ -72,11 +77,11 @@ tl.set('#colon', {
 });
 tl.set('#registered', {
   opacity: 1,
-  delay: 0.3,
+  delay: 0.2,
 });
 tl.set('#st3', {
   fill: '#fff',
-  delay: 0.8,
+  delay: 0.4,
 });
 tl.set(
   '#rect',
@@ -131,9 +136,9 @@ tl.set(
 );
 tl.set('#arrow', {
   opacity: 1,
-  delay: 0.8,
+  delay: 0.6,
 });
 tl.set('#coming', {
   opacity: 1,
-  delay: 0.4,
+  delay: 0.2,
 });
