@@ -59,6 +59,6 @@ img {
   width: 100%;
 }
 
-#logo g {
+#logo svg > g {
   opacity: 0;
 }
