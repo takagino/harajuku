@@ -59,6 +59,14 @@ img {
   width: 100%;
 }
 
-#logo svg > g {
+#logo g {
   opacity: 0;
+}
+
+#line {
+  stroke-width: 0;
+}
+
+#coming:hover #line {
+  stroke-width: 2;
 }
