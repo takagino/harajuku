@@ -70,3 +70,40 @@ img {
 #coming:hover #line {
   stroke-width: 2;
 }
+
+.news {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+}
+
+.news {
+  display: block;
+  color: #c1272d;
+  font-family: 'Zen Old Mincho', serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.news dl {
+  margin: 0;
+}
+
+.news dt {
+  font-size: min(4vw, 58px);
+  border-bottom: min(0.2vw, 2px) solid #fff;
+  line-height: 1.1;
+}
+
+.news:hover dt {
+  border-bottom-color: #000;
+}
+
+.news dd {
+  margin: 0;
+  font-size: min(1.7vw, 24px);
+  line-height: 1.1;
+}
