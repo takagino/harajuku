@@ -90,7 +90,7 @@ img {
 }
 
 #news dt {
-  font-size: min(4vw, 58px);
+  font-size: clamp(16px, 4.3vw, 58px);
   border-bottom: min(0.2vw, 2px) solid #fff;
   line-height: 1.1;
 }
@@ -101,6 +101,6 @@ img {
 
 #news dd {
   margin: 0;
-  font-size: min(1.7vw, 24px);
+  font-size: clamp(6px, 1.7vw, 24px);
   line-height: 1.1;
 }
