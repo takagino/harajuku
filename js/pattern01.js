@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const blinkSpeed = 0.3;
 
   // アニメーション
-  tl.set('#coming', {
+  tl.set('#news', {
     display: 'none',
   });
   tl.set('#message', {
@@ -143,7 +143,7 @@ window.addEventListener('DOMContentLoaded', function () {
     opacity: 1,
     delay: 0.6,
   });
-  tl.set('#coming', {
+  tl.set('#news', {
     display: 'block',
     opacity: 1,
     delay: 0.2,
